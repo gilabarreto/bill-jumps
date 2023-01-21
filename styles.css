@@ -28,10 +28,31 @@
   0% {
     bottom: 0;
   }
+
   50% {
     bottom: 100px;
   }
+
   100% {
     bottom: 0;
+  }
+}
+
+#chair {
+  height: 30%;
+  bottom: 0;
+  position: absolute;
+  left: 94.5%;
+
+  animation: chair 1s linear  infinite;
+}
+
+@keyframes chair {
+  0% {
+    left: 94.5%;
+  }
+
+  100% {
+    left: -10%;
   }
 }
