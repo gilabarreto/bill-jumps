@@ -14,11 +14,14 @@
   /* overflow: hidden; */
 }
 
-.bill {
+#bill {
   height: 50%;
   bottom: 0;
   position: absolute;
-  animation: jump 0.5s infinite alternate;
+}
+
+.jump {
+  animation: jump 0.3s linear;
 }
 
 @keyframes jump {
