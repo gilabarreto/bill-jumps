@@ -7,11 +7,30 @@
 
 .game {
   width: 600px;
-  height: 200px;
+  height: 300px;
   border: 1px solid black;
   margin: auto;
   position: relative;
   /* overflow: hidden; */
+}
+
+.score {
+  position: absolute;
+  font-size: 3vmin;
+  right: 1vmin;
+  top: 1vmin;
+}
+
+.start {
+  position: absolute;
+  font-size: 3vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
 }
 
 #bill {
@@ -29,8 +48,12 @@
     bottom: 0;
   }
 
-  50% {
-    bottom: 100px;
+  30% {
+    bottom: 50%;
+  }
+
+  70% {
+    bottom: 50%;
   }
 
   100% {
@@ -42,17 +65,19 @@
   height: 30%;
   bottom: 0;
   position: absolute;
-  left: 94.5%;
+  left: 92%;
+}
 
-  animation: chair 1s linear  infinite;
+.run {
+  animation: chair 1s linear infinite;
 }
 
 @keyframes chair {
   0% {
-    left: 94.5%;
+    left: 92%;
   }
 
   100% {
-    left: -10%;
+    left: -3%;
   }
 }
