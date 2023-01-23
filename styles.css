@@ -49,11 +49,6 @@ body {
   margin-bottom: 2.5px;
   box-shadow: 0 2.5px black;
   background-color: #0000a8;
-  /* display: flex;
-  justify-content: left;
-  align-items: center;
-  position: relative;
-  overflow: hidden; */
 }
 
 .top-gray-square {
@@ -65,7 +60,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .minimizer {
@@ -84,12 +78,9 @@ body {
   border-bottom: 2.5px solid black;
   border-left: 2.5px solid black;
   border-right: 2.5px solid black;
-  /* background-color: white; */
   display: flex;
-  /* justify-content: left; */
   align-items: center;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .about,
@@ -108,12 +99,13 @@ body {
 
 .span-about::first-letter {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .span-help::first-letter {
   text-decoration: underline;
+  cursor: pointer;
 }
-
 
 .window {
   width: 90%;
@@ -123,9 +115,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column;
-  position: relative;
-  overflow: hidden; */
 }
 
 .about {
@@ -133,21 +122,12 @@ body {
   height: 95%;
   border: 1px solid white;
   background-color: white;
-  /* display: flex; */
-  /* position: relative;
-  overflow: hidden; */
 }
 
 .bottom-blue-bar {
   height: 9%;
   box-shadow: 0 2.5px black;
   background-color: #0000a8;
-  /* display: flex;
-  justify-content: left;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  overflow: hidden; */
 }
 
 .bottom-gray-square {
@@ -158,17 +138,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative;
-  overflow: hidden; */
 }
 
 .about-content {
-  /* border: 1px solid black;
-  width: 100%;
-  height: 91%;
-  flex-direction: row;
-  justify-content: center;
-  background-color: salmon; */
   display: flex;
 }
 
@@ -176,14 +148,10 @@ body {
   padding: 1em;
   text-align: justify;
   width: 100%;
-  /* text-justify: inter-word;
-  display: flex;
-  flex-direction: column; */
 }
 
 .about-video {
   padding: 1em;
-  /* display: flex; */
   width: 100%;
 }
 
@@ -207,15 +175,12 @@ body {
   height: 95%;
   border: 1px solid white;
   background-color: white;
-  /* display: flex; */
   position: relative;
   overflow: hidden;
 }
 
 .game-name {
-  /* padding-right: 1px; */
   position: absolute;
-  /* font-size: 1em; */
   right: 47%;
   top: 3%;
   color: white;
@@ -291,7 +256,6 @@ body {
 }
 
 #bill-icon {
-  /* height: 92px; */
   width: 92px;
   position: absolute;
   left: 5%;
