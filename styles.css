@@ -85,8 +85,35 @@ body {
   overflow: hidden;
 }
 
-.span-underline::first-letter {
+.about,
+.help,
+.bill-video,
+.game {
+  display: none;
+}
+
+.about.active,
+.help.active,
+.bill-video.active,
+.game.active {
+  display: block;
+}
+
+.span-about::first-letter {
   text-decoration: underline;
+}
+
+.span-help::first-letter {
+  text-decoration: underline;
+}
+
+#bill-icon {
+  height: 92px;
+  width: 92px;
+  position: absolute;
+  left: 5%;
+  bottom: 3%;
+  cursor: pointer;
 }
 
 .window {
@@ -134,12 +161,60 @@ body {
   box-shadow: 2px 2px #87888f
 }
 
+.about {
+  width: 97%;
+  height: 95%;
+  border: 1px solid white;
+  background-color: white;
+  /* display: flex; */
+  position: relative;
+  overflow: hidden;
+}
+.about-content {
+
+  border: 1px solid black;
+  background-color: salmon;
+  /* display: flex; */
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.about-text {
+  width: 50%;
+  float: left;
+}
+
+.about-video {
+  width: 50%;
+  float: left;
+}
+
+.help {
+  width: 100%;
+  height: 100%;
+}
+
+.help-youtube-video {
+  width: 100%;
+  height: 100%;
+}
+
+.bill-video {
+  width: 100%;
+  height: 100%;
+}
+
+.bill-youtube-video {
+  width: 100%;
+  height: 100%;
+}
+
 .game {
   width: 97%;
   height: 95%;
   border: 1px solid white;
   background-color: white;
-  display: flex;
+  /* display: flex; */
   position: relative;
   overflow: hidden;
 }

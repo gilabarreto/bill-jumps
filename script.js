@@ -2,7 +2,7 @@ const bill = document.querySelector("[data-bill");
 const chair = document.querySelector("[data-chair]");
 const start = document.querySelector("[data-start]");
 const scoreElem = document.querySelector("[data-score]");
-const errorSound = new Audio("./public/sounds/error.mp3")
+const errorSound = new Audio("./public/sounds/WinError.mp3")
 
 let score = 0;
 let isRunning = false;
