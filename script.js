@@ -10,6 +10,7 @@ let billFrame = 0;
 
 document.addEventListener("keydown", handleStart);
 
+// Fucntion to start the game
 function handleStart() {
   if (isRunning) {
     return;
@@ -67,7 +68,7 @@ function jump() {
   }
 }
 
-// Function to check if Bill hit the chair
+// Function to check if Bill hits the chair
 const handleCollision = () => {
   collisionInterval = setInterval(() => {
 
