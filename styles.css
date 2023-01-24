@@ -141,13 +141,16 @@ body {
 }
 
 .about-content {
+  height: 91%;
   display: flex;
 }
 
 .about-text {
   padding: 1em;
   text-align: justify;
+  font-size: 90%;
   width: 100%;
+  overflow: hidden;
 }
 
 .about-video {
