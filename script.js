@@ -23,6 +23,10 @@ function show(section) {
   for (const el of document.querySelectorAll(".about, .help, .game")) {
     el.classList.toggle("active", el.classList.contains(section));
   }
+  // Pause any video playing in the section we're leaving
+  for (const iframe of document.querySelectorAll("iframe[src]")) {
+    iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', "*");
+  }
   // YouTube embeds only load when first opened
   const video = document.querySelector(`.${section} iframe:not([src])`);
   if (video) video.src = video.dataset.src;
