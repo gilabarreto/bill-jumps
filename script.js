@@ -107,7 +107,7 @@ function gameOver(now) {
 
 function renderScore() {
   const pad = (n) => String(n).padStart(5, "0");
-  scoreElem.textContent = `HI ${pad(best)} ${pad(score)}`;
+  scoreElem.textContent = `HI ${pad(best)} - ${pad(score)}`;
 }
 
 function setBill(frame) {
