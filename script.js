@@ -18,6 +18,14 @@ let runTime, lastTime, chairX;
 
 renderScore();
 
+// The window is a fixed 900x600; shrink it to fit small screens like phones
+const windowElem = document.querySelector(".outter-window");
+function fitWindow() {
+  windowElem.style.zoom = Math.min(1, (innerWidth - 16) / 900, (innerHeight - 16) / 600);
+}
+fitWindow();
+addEventListener("resize", fitWindow);
+
 // Show one section of the window, hide the others
 function show(section) {
   for (const el of document.querySelectorAll(".about, .help, .game")) {
