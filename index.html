@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bill Jumps</title>
   <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Help Bill jump over chairs in this retro remake of the Chrome dinosaur game.">
+  <meta property="og:title" content="Bill Jumps">
+  <meta property="og:description" content="Help Bill jump over chairs in this retro remake of the Chrome dinosaur game.">
+  <meta property="og:image" content="https://gilabarreto.github.io/bill-jumps/public/imgs/og.png">
+  <meta property="og:url" content="https://gilabarreto.github.io/bill-jumps/">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" href="./public/imgs/bill-favicon.png">
 </head>
 
@@ -18,8 +24,8 @@
       </div>
     </div>
     <div class="menu-bar">
-      &nbsp;<span class="span-about">About</span>
-      &emsp;<span class="span-help">Help</span>
+      &nbsp;<button class="span-about">About</button>
+      &emsp;<button class="span-help">Help</button>
     </div>
     <div class="window">
       <div class="about">
@@ -31,12 +37,12 @@
         <div class="about-content">
           <div class="about-text">
             <h1>About</h1>
-            <br>
+            <p>
             A re-creation of a popular offline game found in Chrome, Bill Jumps uses Bill to jump over chairs in a
             manner reminiscent of his iconic 90s video, not a dinosaur. Pressing the space key will allow the player
             to control Bill as he leaps over chairs. Designed to be fun and entertaining, this game is sure to delight
             any player.
-            </br>
+            </p>
             <p>
               Victor Barreto, a Full Stack Web Developer and retro game enthusiast, re-created and developed the
               game. <a href="https://github.com/gilabarreto" target="_blank">Click here</a> to learn more about the
@@ -45,7 +51,7 @@
             </p>
           </div>
           <div class="about-video">
-            <iframe class="bill-youtube-video" src="https://www.youtube.com/embed/KxaCOHT0pmI" title="Bill's Video"
+            <iframe class="bill-youtube-video" data-src="https://www.youtube.com/embed/KxaCOHT0pmI" title="Bill's Video"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
@@ -53,7 +59,7 @@
         </div>
       </div>
       <div class="help">
-        <iframe class="help-youtube-video" src="https://www.youtube.com/embed/Po5ti70U0bc" title="Help" frameborder="0"
+        <iframe class="help-youtube-video" data-src="https://www.youtube.com/embed/Po5ti70U0bc" title="Help" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen></iframe>
       </div>
@@ -64,38 +70,15 @@
           </div>
         </div>
         <div class="score" data-score>0</div>
-        <span class="start" data-start>Press Any Key To Start</span>
-        <span class="game-name" data-start>Bill Jumps</span>
-        <img src="public/imgs/bill-still.png" id="bill" data-bill>
-        <img src="public/imgs/chair.png" id="chair" data-chair>
+        <span class="start" data-start>Press Any Key Or Click To Start</span>
+        <span class="game-name">Bill Jumps</span>
+        <img src="public/imgs/bill-still.png" id="bill" alt="Bill" data-bill>
+        <img src="public/imgs/chair.png" id="chair" alt="Chair" data-chair>
       </div>
     </div>
-    <img src="public/imgs/bill-icon.png" id="bill-icon">
-  </div>
+    <button id="bill-icon"><img src="public/imgs/bill-icon.png" alt="Play Bill Jumps"></button>
   </div>
 </body>
 <script src="script.js"></script>
-<script>
-  // Add about section, remove the others
-  document.querySelector(".span-about").addEventListener("click", function () {
-    document.querySelector(".about").classList.add("active");
-    document.querySelector(".help").classList.remove("active");
-    document.querySelector(".game").classList.remove("active");
-  });
-
-  // Add help video, remove the others
-  document.querySelector(".span-help").addEventListener("click", function () {
-    document.querySelector(".help").classList.add("active");
-    document.querySelector(".about").classList.remove("active");
-    document.querySelector(".game").classList.remove("active");
-  });
-
-  // Add game section, remove the others
-  document.getElementById("bill-icon").addEventListener("click", function () {
-    document.querySelector(".game").classList.add("active");
-    document.querySelector(".about").classList.remove("active");
-    document.querySelector(".help").classList.remove("active");
-  });
-</script>
 
 </html>

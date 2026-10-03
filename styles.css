@@ -85,26 +85,28 @@ body {
 
 .about,
 .help,
-.bill-video,
 .game {
   display: none;
 }
 
 .about.active,
 .help.active,
-.bill-video.active,
 .game.active {
   display: block;
 }
 
-.span-about::first-letter {
-  text-decoration: underline;
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
   cursor: pointer;
 }
 
+.span-about::first-letter,
 .span-help::first-letter {
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .window {
@@ -203,6 +205,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .hide {
@@ -244,24 +247,13 @@ body {
   left: 93%;
 }
 
-.run {
-  animation: chair 1s linear infinite;
-}
-
-@keyframes chair {
-  0% {
-    left: 93%;
-  }
-
-  100% {
-    left: -2%;
-  }
-}
-
 #bill-icon {
-  width: 92px;
   position: absolute;
   left: 5%;
   bottom: 3%;
-  cursor: pointer;
+}
+
+#bill-icon img {
+  width: 92px;
+  display: block;
 }
